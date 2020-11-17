@@ -98,14 +98,12 @@ void CheckPassword()
 int main()
 {
     ResetLock();
-
     do
     {
         Draw();
         GetInput();
         CheckPassword();
         system("cls");
-        
     } while (!correctPassword);
 
     std::cout << "You entered the correct password!\n";
